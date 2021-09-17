@@ -1,0 +1,20 @@
+{
+  "name": "@definejs/requirer",
+  "version": "2.0.1",
+  "description": "解析包中 require 使用的包和实际 dependencies 中提供的包的分析对比.",
+  "main": "index.js",
+  "bin": {},
+  "author": "definejs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/definejs/requirer.git"
+  },
+  "dependencies": {
+    "@definejs/array": "^1.1.0",
+    "@definejs/file": "^2.0.1",
+    "@definejs/fn": "^1.0.0",
+    "@definejs/lines": "^1.0.0",
+    "@definejs/patterns": "^1.0.2"
+  }
+}
