@@ -30,14 +30,16 @@ module.exports = {
         let startNo = 0;    //下次搜索的起始行号
 
         list = list.map((item, index) => {
-            if (item.startsWith('\n') || item.startsWith('\r')) {
-                item = item.slice(1);
-            }
+            item = item.split('\n\r').join('');
+            item = item.split('\n').join('');
+            item = item.split('\r').join('');
 
             let no = Lines.getIndex(lines, item, startNo);  //行号。
             let line = lines[no];                           //整一行的 html。
 
+
             startNo = no + 1;
+
 
 
             if (line.trim().startsWith('//')) {
