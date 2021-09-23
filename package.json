@@ -1,6 +1,6 @@
 {
   "name": "@definejs/requirer",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "description": "解析包中 require 使用的包和实际 dependencies 中提供的包的分析对比.",
   "main": "index.js",
   "bin": {},

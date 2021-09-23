@@ -11,7 +11,11 @@ module.exports = {
         let ids = Object.keys(dependencies);
 
         let needAdds = usedIds.filter((id) => {
-            return !id.startsWith('./') && !dependencies[id];
+            if (id.startsWith('./') || id.startsWith('../')) {
+                return false;
+            }
+
+            return !dependencies[id];
         });
 
         let needDeletes = ids.filter((id) => {
